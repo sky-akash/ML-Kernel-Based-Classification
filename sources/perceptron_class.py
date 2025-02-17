@@ -2,7 +2,6 @@
 
 # For creating the perceptron class, we need 
 # default __init__ function with inputs/ initialization parameters for the class
-# define the several activation functions to choose from (unit_step_func, and sign_func)
 # activation function, to keep consistency with the chosen activation function
 # fit funtion to fit the model on training data including the update of weights and returning the final weights and bias
 # predict function to make predictions on the test data using the finalized weights and bias from the fit function. 
@@ -65,12 +64,3 @@ class Perceptron:
         """Return accuracy on the given dataset."""
         return np.mean(self.predict(X) == y)
 #####################################################################################
-
-
-
-
-
-
-
-
-

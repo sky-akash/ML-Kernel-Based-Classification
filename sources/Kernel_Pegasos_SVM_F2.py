@@ -59,20 +59,4 @@ class KernelizedPegasosSVM:
         # Return the predicted labels based on the sign of the decision values
         return np.sign(decision_values)
 
-"""
-# Example usage:
-if __name__ == "__main__":
-    # Generate synthetic data
-    from sklearn.datasets import make_classification
-    X, y = make_classification(n_samples=100, n_features=2, n_classes=2, n_redundant=0, n_clusters_per_class=1)
-    y = np.where(y == 0, -1, 1)  # Convert labels to {-1, 1}
-    
-    # Train and test the model
-    model = KernelizedPegasosSVM(kernel='rbf', gamma=0.5, batch_size=32)
-    model.train(X, y)
-    predictions = model.predict(X)
-    
-    # Evaluate accuracy
-    accuracy = np.mean(predictions == y)
-    print(f"Accuracy: {accuracy:.2f}")
-"""
+#################################

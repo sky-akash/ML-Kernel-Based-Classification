@@ -72,3 +72,5 @@ class SVM_Pegasos:
     def score(self, X, y):
         y_pred = self.predict(X)
         return np.mean(y_pred == y)
+
+###########################################################################

@@ -101,7 +101,7 @@ def cross_validate(
             cv = std_dev / mean_score if mean_score != 0 else np.inf  # Avoid division by zero
 
             if verbose:
-                print(f"Mean Score: {mean_score:.4f}, Std Dev: {std_dev:.4f}, CV: {cv:.4f}")
+                print(f"Mean Score: {mean_score:.10f}, Std Dev: {std_dev:.10f}, CV: {cv:.10f}")
 
             # Store the result in the history list
             history.append({
